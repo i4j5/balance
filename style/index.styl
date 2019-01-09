@@ -241,13 +241,31 @@
     line-height 1.8em
     text-align left
     margin-top 60px 
+    max-width 500px
+    &__title
+        font-size 18px
+        margin-bottom 10px
+    p
+        padding-left 10px
+        position relative
+        line-height 1.2em
+        margin-bottom 10px
+        &:before
+            content '-'
+            height 2px
+            position absolute
+            //left -10px
+            //top 60px
+            position absolute
+            left - 5px 
 
 .textt
     font-weight 300
-    font-size 16px
+    font-size 16px 
     line-height 1.8em
-    @media (min-width 900px)
-        background #fff url('../img/textt-bg.jpg') no-repeat center right
+    background #63b1ff73 
+    // @media (min-width 900px)
+    //     background #63b1ff7a  url('../img/textt-bg.png') no-repeat center right
     min-height 300px
     margin-top 100px
     &__title
@@ -262,7 +280,7 @@
             position absolute
             left -100040px
             top 60px
-            background #868686
+            background #00000094
 
 .product
     background #f1f1f1
@@ -414,6 +432,9 @@
         text-transform uppercase
         z-index 100
         position relative 
+        color #fff 
+        color #410c75
+        font-weight 400
     &__text
         font-size 14px
         line-height 1.4em
@@ -424,7 +445,7 @@
     &__n
         font-size 180px
         font-weight 400
-        color #e8e8e8
+        color #5f407d4a
         position absolute
         z-index 50
         top 0px
@@ -442,8 +463,9 @@
     margin-top 100px
     font-weight 300
     &__title
-        font-size 30px
-        padding-bottom 25px
+        font-size 25px
+        line-height 1.5em
+        padding-bottom 10px
         text-transform uppercase
         
 .map
@@ -628,6 +650,7 @@
             margin-top 100px
     &__text
         font-size 18px
+        line-height 1.8em
         
 .timer
     margin-bottom 40px 
